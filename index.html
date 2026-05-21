@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNeeds — Structured Data Marketplace</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="logo.svg" alt="DataNeeds" style="height:50px;">
+      </a>
+      <div class="nav-links">
+        <a href="#datasets">Datasets</a>
+        <a href="#samples">Samples</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Data marketplace</p>
+    <h1>Structured niche datasets for researchers, developers, and platforms</h1>
+    <p class="hero-sub">We collect, clean, and structure hard-to-find data from across the web — coins, birds, trading cards, antiques, and more. Browse datasets below or contact us with your requirement.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="num" id="stat-sources">—</span><span class="label">Data sources</span></div>
+      <div class="divider-v"></div>
+      <div class="stat"><span class="num">500K+</span><span class="label">Total records</span></div>
+      <div class="divider-v"></div>
+      <div class="stat"><span class="num">Weekly</span><span class="label">Update frequency</span></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#datasets" class="btn-primary">Browse datasets</a>
+      <a href="#samples" class="btn-ghost">View sample data</a>
+    </div>
+  </section>
+
+  <!-- Dataset cards built by JS -->
+  <section class="section" id="datasets">
+    <h2>What we have</h2>
+    <p class="section-sub">Click any dataset to jump to its sample data below.</p>
+    <div id="category-container"></div>
+  </section>
+
+  <!-- Sample tabs built by JS -->
+  <section class="section alt" id="samples">
+    <div class="samples-inner">
+      <h2>Sample data</h2>
+      <p class="section-sub">A preview of each dataset. Contact us to receive a full sample file.</p>
+      <div class="tabs" id="tabs-container"></div>
+      <div id="tables-container"></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Get in touch</h2>
+    <p class="section-sub">Tell us which dataset you need, your preferred format (CSV or JSON), and how often you need updates. We reply within 24 hours.</p>
+    <form class="contact-form" action="https://formspree.io/f/mnjrjdov" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dataset">Dataset you are interested in</label>
+        <select id="dataset-select" name="dataset">
+          <option value="">Select a dataset</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Your requirement</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe what you need — volume, format (CSV/JSON), update frequency, specific filters, or any other details..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p><strong>DataNeeds</strong> &mdash; structured data marketplace</p>
+    <p>preethamreddy2424@gmail.com</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
