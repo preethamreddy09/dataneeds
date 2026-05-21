@@ -41,7 +41,7 @@
     "category": "Numismatics",
     "badge": "India",
     "description": "Indian coin catalog with current prices. Covers commemorative and standard circulation issues.",
-    "record_count": 3,000+",
+    "record_count": "3,000+",
     "formats": "CSV / JSON",
     "sample_file": "samples/ics_sample.csv",
     "columns": ["Image", "Product name", "Category", "Price"],
